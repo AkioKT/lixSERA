@@ -1,20 +1,37 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from "react";
+import {
+  View,
+  Text,
+  TextInput,
+  Image,
+  ScrollView,
+  TouchableOpacity,
+  StyleSheet,
+  SafeAreaView,
+  StatusBar,
+  ActivityIndicator,
+} from "react-native";
+import { useFonts } from "expo-font";
+import Home from "./src/screens/Home";
 
-export default function App() {
+const App = () => {
+  const [fontsLoaded] = useFonts({
+    "Poppins-Regular": require("./assets/fonts/Poppins-Regular.ttf"),
+    "Poppins-SemiBold": require("./assets/fonts/Poppins-SemiBold.ttf"),
+    "Poppins-Bold": require("./assets/fonts/Poppins-Bold.ttf"),
+  });
+
+  if (!fontsLoaded) {
+    return (
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+        <ActivityIndicator size="large" color="#000" />
+      </View>
+    );
+  }
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={{ flex: 1 }}>
+      <Home />
     </View>
   );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+};
+export default App;
