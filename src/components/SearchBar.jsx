@@ -23,7 +23,7 @@ export default function SearchBar() {
       />
       <TouchableOpacity style={styles.searchIcon}>
         <Image
-          source={require("../../assets/search-glass-icon.png")}
+          source={require("../../assets/icon/search-glass-icon.png")}
           style={{width: 20, height: 20}}
         ></Image>
       </TouchableOpacity>

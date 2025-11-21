@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import styles from "../styles/NearbyFoodSection";
-import ShopIcon from "../../assets/shop-icon.png";
+import ShopIcon from "../../assets/icon/shop-icon.png";
 
 export default function NearbyFoodSection() {
   const nearbyRestaurants = [

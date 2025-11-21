@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { View, TouchableOpacity, Image } from "react-native";
 import styles from "../styles/NavigationBar";
-import HomeIcon from "../../assets/home-icon.png";
-import HistoryIcon from "../../assets/history-icon.png";
-import ActivityIcon from "../../assets/activity-icon.png";
-import ProfileIcon from "../../assets/profile-icon.png";
+import HomeIcon from "../../assets/icon/home-icon.png";
+import HistoryIcon from "../../assets/icon/history-icon.png";
+import ActivityIcon from "../../assets/icon/activity-icon.png";
+import ProfileIcon from "../../assets/icon/profile-icon.png";
 import GlobalText from "./GlobalText";
 
 export default function NavigationBar() {

@@ -1,10 +1,10 @@
 import React from "react";
 import { View, Text, TouchableOpacity, Image } from "react-native";
 import styles from "../styles/Categories";
-import FoodIcon from "../../assets/food-icon.png";
-import BeverageIcon from "../../assets/beverage-icon.png";
-import CakeIcon from "../../assets/cake-icon.png";
-import TraditionalIcon from "../../assets/traditional-icon.png";
+import FoodIcon from "../../assets/icon/food-icon.png";
+import BeverageIcon from "../../assets/icon/beverage-icon.png";
+import CakeIcon from "../../assets/icon/cake-icon.png";
+import TraditionalIcon from "../../assets/icon/traditional-icon.png";
 
 export default function Categories() {
   const categories = [

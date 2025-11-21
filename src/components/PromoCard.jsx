@@ -4,6 +4,14 @@ import { LinearGradient } from "expo-linear-gradient";
 import styles from "../styles/PromoCard";
 import GlobalText from "./GlobalText";
 export default function PromoCard() {
+  const promoCard = [
+    {
+      itemPromo : 'Sushi Ghiebrun',
+      price : 23000,
+      
+
+    }
+  ]
   return (
     <LinearGradient
       colors={["#77512D", "#FF7C00"]} // warna gradien
